@@ -1,0 +1,60 @@
+name: reader_app
+description: Una aplicación de lectura PDF/EPUB con API local y base de datos integrada.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  image: ^3.3.0
+
+  # 📚 Lectura de documentos
+  pdfrx: ^1.3.5
+  epub_view: ^3.0.0
+
+  # 🔄 Gestión de estado
+  flutter_riverpod: ^2.5.0
+  riverpod_annotation: ^2.3.0
+
+  # 🗄️ Base de datos local (Drift + SQLite)
+  drift: ^2.25.0
+  drift_flutter: ^0.1.0
+  sqlite3_flutter_libs: ^0.5.0
+  path: ^1.9.0
+
+  # 🌐 Servidor local (API interna)
+  shelf: ^1.4.0
+  shelf_router: ^1.1.0
+
+  # 💾 Archivos y almacenamiento
+  path_provider: ^2.1.0
+  file_picker: ^8.0.0
+  shared_preferences: ^2.2.2
+
+  # 🔐 Seguridad
+  flutter_secure_storage: ^9.0.0
+
+  # 🧰 Utilidades (serialización, anotaciones, etc.)
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+  # ⚙️ Generadores de código
+  build_runner: ^2.4.0
+  riverpod_generator: ^2.3.0
+  drift_dev: ^2.25.0
+  freezed: ^2.4.7
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+
